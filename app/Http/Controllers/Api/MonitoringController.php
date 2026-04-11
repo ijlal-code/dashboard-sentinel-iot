@@ -44,7 +44,7 @@ class MonitoringController extends Controller
         if ($state === 'OFF') {
             // Jika diklik mati, simpan status OFF di Cache selama 20 Menit.
             // Setelah 20 menit, ini otomatis kadaluarsa dan kembali menjadi ON.
-            Cache::put('buzzer_state', 'OFF', now()->addMinutes(20));
+            Cache::put('buzzer_state', 'OFF', now()->addMinutes(2));
         } else {
             // Jika diklik nyala secara manual
             Cache::put('buzzer_state', 'ON');
