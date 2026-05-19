@@ -88,7 +88,7 @@
         Sentinel
     </footer>
 
-    <!-- 🔥 TOAST -->
+    <!-- TOAST -->
     <div id="toast" class="fixed top-5 right-5 opacity-0 pointer-events-none transition-all duration-300">
     </div>
 
@@ -113,7 +113,7 @@
     let historyData = [];
     let toastTimeout;
 
-    // 🔥 TOAST FUNCTION
+    // TOAST FUNCTION
     function showToast(msg, color = "bg-green-500") {
         const toast = document.getElementById("toast");
 
@@ -136,7 +136,7 @@
         }, 3000);
     }
 
-    // 🔥 CLOSE TOAST
+    //close
     window.closeToast = () => {
         const toast = document.getElementById("toast");
         toast.classList.remove("opacity-100");
