@@ -206,6 +206,7 @@
     }
 
     // BUZZER
+    
     window.buzzer = (s) => {
         set(ref(db, "monitoring/buzzer_state"), s);
         showToast("Buzzer " + s);
